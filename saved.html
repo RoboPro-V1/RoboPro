@@ -43,34 +43,6 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
-
-
-  <style>
-    .hero-body {
-      display: flex;
-      flex-direction: column;
-      align-items: center; /* 水平居中 */
-      justify-content: center; /* 垂直居中 */
-    }
-
-    .video-wrapper {
-      display: flex;
-      justify-content: center; /* 水平居中 */
-      align-items: center;
-      width: 100%; /* 根据需求设置宽度 */
-      max-width: 800px; /* 设置视频最大宽度，避免过大 */
-    }
-
-    video {
-      width: 100%; /* 视频宽度设置为 100% 以适应容器 */
-      height: auto; /* 自动调整高度 */
-    }
-
-    h3.subtitle {
-      margin-top: 20px; /* 调整标题与视频的距离 */
-    }
-  </style>
-
 </head>
 <body>
 
@@ -88,6 +60,72 @@
             <h2 class="subtitle is-3 publication-subtitle">
               Robotic Programmer: Video Instructed Policy Code Generation for Robotic Manipulation
             </h2>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Senwei Xie</a>,</span>
+                <span class="author-block">
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Hongyu Wang</a>,</span>
+                  <span class="author-block">
+                    <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Zhanqi Xiao</a>,</span>
+                    <span class="author-block">
+                      <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Ruiping Wang</a>,</span>
+                      <span class="author-block">
+                        <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Xilin Chen</a>
+                      </span>
+                  </div>
+
+                  <!-- <div class="is-size-5 publication-authors">
+                    <span class="author-block">Institution Name<br>Conferance name and year</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                  </div> -->
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
           </div>
         </div>
       </div>
@@ -100,17 +138,14 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <div class="video-wrapper">
-        <video poster="" id="tree" autoplay controls muted loop height="100%">
-          <!-- Your video here -->
-          <source src="static/videos/supplementary_video.mp4"
-          type="video/mp4">
-        </video>
-      </div>
-      <h3 class="subtitle has-text-centered">
-        We present <b>Robotic Programmer</b> (<img src="static/images/RoboPro.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
-        <span class="mathvista">RoboPro</span>), a video-instructed <b>robotic foundation model</b> with the capability of <b>perceiving visual information and following free-form instructions</b> to perform robotic manipulation with policy code in a <b>zero-shot manner</b>. 
-      </h3>
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/supplementary_video.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Supplementary Video 
+      </h2>
     </div>
   </div>
 </section>
@@ -136,7 +171,7 @@
   </div>
 </section> -->
 
-<section class="section">
+<section class="section"></section>
   <div class="container" style="margin-bottom: 2vh;">
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
@@ -144,8 +179,8 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p style="line-height: 200%;">
-            <b>Zero-shot generalization</b> across various robots, tasks and environments remains a significant challenge in <b>robotic manipulation</b>. <b>Policy code</b> generation methods use executable code to connect <b>high-level task descriptions and low-level action sequences</b>, utilizing the generalization capabilities of Large Language Models (LLMs) and atomic skill libraries. In this work, we propose <b>Robotic Programmer(</b><img src="static/images/RoboPro.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
-            <span class="mathvista"><b>RoboPro</b></span><b>)</b>, a <b>robotic foundation model</b>, enabling the capability of <b>perceiving visual information and following free-form instructions</b> to perform robotic manipulation with policy code in a <b>zero-shot manner</b>. To address low efficiency and high cost in collecting runtime code data for robotic tasks, we propose <b>Video2Code</b> to synthesize executable code from <b>extensive videos in-the-wild</b> with off-the-shelf <b>vision-language model</b> and <b>code-domain large language model</b>. Extensive experiments show that <img src="static/images/RoboPro.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
+            <b>Zero-shot generalization</b> across various robots, tasks and environments remains a significant challenge in <b>robotic manipulation</b>. <b>Policy code</b> generation methods use executable code to connect <b>high-level task descriptions and low-level action sequences</b>, utilizing the generalization capabilities of Large Language Models (LLMs) and atomic skill libraries. In this work, we propose <b>Robotic Programmer</b> (<img src="static/images/RoboPro.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
+            <span class="mathvista">RoboPro</span>), a <b>robotic foundation model</b>, enabling the capability of <b>perceiving visual information and following free-form instructions</b> to perform robotic manipulation with policy code in a zero-shot manner. To address low efficiency and high cost in collecting runtime code data for robotic tasks, we propose <b>Video2Code</b> to synthesize executable code from <b>extensive videos in-the-wild</b> with off-the-shelf <b>vision-language model</b> and <b>code-domain large language model</b>. Extensive experiments show that <img src="static/images/RoboPro.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
             <span class="mathvista">RoboPro</span> achieves the state-of-the-art zero-shot performance on robotic manipulation in both simulators and real-world environments. Specifically, the zero-shot success rate of <img src="static/images/RoboPro.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
             <span class="mathvista">RoboPro</span> on RLBench surpasses the state-of-the-art model <b>GPT-4o</b> by <b>11.6\%</b>, which is even comparable to a strong supervised training baseline. Furthermore, <img src="static/images/RoboPro.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
             <span class="mathvista">RoboPro</span> is <b>robust to different robotic configurations</b>, and demonstrates the <b>emergent ability for unseen skills on complex tasks</b>.
@@ -154,7 +189,7 @@
       </div>
     </div>
     <!--/ Abstract. -->
-  </div>
+</div>
 </section>
 <!-- End paper abstract -->
 
@@ -285,7 +320,132 @@
   </div>
 </section>
 
-<footer class="footer">
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          First image description.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Second image description.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+         Third image description.
+       </h2>
+     </div>
+     <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Fourth image description.
+      </h2>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+
+
+
+<!-- Youtube video -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+            <!-- Youtube embed code here -->
+            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End youtube video -->
+
+
+<!-- Video carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Another Carousel</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/carousel1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/carousel2.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+            <!-- Your video file here -->
+            <source src="static/videos/carousel3.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video carousel -->
+
+
+
+
+<!-- Paper poster -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section>
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
